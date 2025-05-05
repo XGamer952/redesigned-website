@@ -60,7 +60,7 @@ header {
 
 .search-bar {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   flex: 1;
   gap: 0.5rem;
@@ -80,11 +80,15 @@ header {
   background: var(--main-blue);
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem;
   border-radius: 4px;
   cursor: pointer;
   transition: background 0.3s ease;
   font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
 }
 
 .search-bar button:hover {
@@ -121,6 +125,7 @@ header {
   font-weight: 600;
   font-size: 1.25rem;
   transition: color 0.3s;
+  white-space: nowrap;
 }
 
 .category-bar a:hover {
@@ -130,7 +135,7 @@ header {
 .hero {
   background: url("assets/lab.jpg") center/cover no-repeat;
   text-align: center;
-  padding: 6rem 1rem;
+  padding: 3rem 1rem 5rem;
   position: relative;
   color: var(--main-blue);
 }
@@ -153,24 +158,31 @@ header {
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
   padding: 0 1rem;
+  white-space: normal;
+  word-break: keep-all;
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  white-space: nowrap;
 }
 
 .hero .buttons {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.25rem;
 }
 
 .hero .buttons button {
   background: #4ca8c4;
   color: white;
   border: none;
-  padding: 1.25rem 2.5rem;
-  font-size: 1.5rem;
+  padding: 1.5rem 2.75rem;
+  font-size: 1.6rem;
   border-radius: 6px;
   cursor: pointer;
   transition: background 0.3s ease, box-shadow 0.3s ease;
@@ -260,7 +272,17 @@ footer {
     display: none;
   }
   .category-bar {
-    gap: 2rem;
+    gap: 1.5rem;
     padding: 1rem;
+  }
+  .category-bar a {
+    font-size: 1rem;
+  }
+  .search-bar button {
+    padding: 0.75rem;
+    height: auto;
+  }
+  .hero h1 {
+    font-size: 2.4rem;
   }
 }
