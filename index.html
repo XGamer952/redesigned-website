@@ -1,32 +1,93 @@
-  <!-- TO RUN IN BROWSER:
-    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
-    2. Right click html file and either run in default browser or another browser
-  -->
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML/CSS Studio</title>
-    <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" /> 
+    <title>Pacific Northwest X-Ray Inc.</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-
-  <!-- page content goes into <body> -->
   <body>
-    <div id="logoBar">
-      <h1>Welcome to 100 Acre Wood!</h1>
-      <img id="siteLogo" alt="Pooh-bear site logo" src="./assets/Header.png"/>
-      <h3>We're glad you're here :D</h3>
-    </div>
-    <hr/>
-    <div id="staffGallery">
-      <img class="galleryImage" src="./assets/Eeyore-Eh.png"/>
-      <img class="galleryImage" src="./assets/Eeyore-Zz.png"/>
-      <img class="galleryImage" src="./assets/Kanga-Roo.png"/>
-      <img class="galleryImage" src="./assets/Owl-Phone.png"/>
-    </div>
-  </body>
+    <header>
+      <div class="top-bar">
+        <a href="#" class="logo-container">
+          <img
+            class="logo"
+            src="assets/logo-placeholder.png"
+            alt="Pacific Northwest X-Ray Inc."
+          />
+          <span
+            ><span>Pacific</span><span>Northwest</span
+            ><span>X-Ray Inc.</span></span
+          >
+        </a>
+        <div class="search-bar">
+          <input type="text" placeholder="Search products..." />
+          <button>🔍</button>
+        </div>
+        <a href="#" class="cart-icon">
+          <img src="assets/cart.png" alt="Shopping Cart" />
+        </a>
+      </div>
+    </header>
 
+    <nav class="category-bar">
+      <a href="#">Equipment</a>
+      <a href="#">Accessories</a>
+      <a href="#">Supplies</a>
+      <a href="#">Parts</a>
+    </nav>
+
+    <section class="hero">
+      <h1>Pacific Northwest X-Ray Inc.</h1>
+      <div class="buttons">
+        <button>Browse Products</button>
+        <button>Contact Us</button>
+      </div>
+    </section>
+
+    <h2 class="section-title align-left">Featured Products</h2>
+    <section class="products">
+      <a class="product-card" href="#">
+        <img src="assets/xray1.png" alt="X-Ray Machine" />
+        <p>Digital Portable X-Ray System</p>
+      </a>
+      <a class="product-card" href="#">
+        <img src="assets/xray1.png" alt="X-Ray Machine" />
+        <p>Digital Portable X-Ray System</p>
+      </a>
+      <a class="product-card" href="#">
+        <img src="assets/xray1.png" alt="X-Ray Machine" />
+        <p>Digital Portable X-Ray System</p>
+      </a>
+      <a class="product-card" href="#">
+        <img src="assets/xray1.png" alt="X-Ray Machine" />
+        <p>Digital Portable X-Ray System</p>
+      </a>
+      <a class="product-card" href="#">
+        <img src="assets/xray1.png" alt="X-Ray Machine" />
+        <p>Digital Portable X-Ray System</p>
+      </a>
+      <a class="product-card" href="#">
+        <img src="assets/xray1.png" alt="X-Ray Machine" />
+        <p>Digital Portable X-Ray System</p>
+      </a>
+      <a class="product-card" href="#">
+        <img src="assets/xray1.png" alt="X-Ray Machine" />
+        <p>Digital Portable X-Ray System</p>
+      </a>
+      <a class="product-card" href="#">
+        <img src="assets/xray1.png" alt="X-Ray Machine" />
+        <p>Digital Portable X-Ray System</p>
+      </a>
+    </section>
+
+    <footer>
+      &copy;1997–2025 Pacific Northwest X-Ray Inc. – Sales & Marketing Division
+      – All Rights Reserved
+    </footer>
+  </body>
 </html>
